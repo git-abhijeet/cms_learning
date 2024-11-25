@@ -73,4 +73,6 @@ export const {
             },
         }),
     ],
+    secret: process.env.NEXTAUTH_SECRET,
+    trustHost: true, // This should be outside of the providers array
 });
