@@ -11,7 +11,7 @@ const ProfilePage = async () => {
         redirect("/sign-in");
     }
 
-    const userEmail = session.user.email;
+    const userEmail = session.user.email ?? "";
 
     return <PostPage userEmail={userEmail} />;
 };
