@@ -128,12 +128,11 @@ const EditorPage: React.FC<EditorPageProps> = ({
             </div>
 
             <TinyMCEEditor
-                apiKey="ty5z6jnvyksbot1vpeoc952lxjshqisb3qk0n897cxjya3zn"
-                // onInit={(_evt, editor) => (editorRef.current = editor)}
+                apiKey="ie1mb9s0pzkpx514txose8gjlqpjsaecui5jscms4kdacvp7"
                 onInit={(_evt, editor) => {
                     editorRef.current = editor;
                     console.log("TinyMCE editor initialized");
-                    console.log(editor.plugins); // Log available plugins
+                    console.log(editor.plugins);
                 }}
                 initialValue={initialData?.content || ""}
                 init={{
